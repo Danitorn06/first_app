@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+//import 'form_example/form_example1.dart';
+//import 'api_example/api_example.dart';
+//import 'api_example/api_exampleList.dart';
+import 'api_example/AssigmentWeek5.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,73 +14,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Week 4 Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyWidget(),
-    );
-  }
-}
-
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('layout'),
-        backgroundColor: Colors.blue,
-      ),
-      body: Center(
-        child: Stack(
-          children: [
-            Container(
-              color: Colors.black,
-              width: 120,
-              height: 300,
-            ),
-            Positioned(
-              top: 20,
-              left: 20,
-              child: Container(
-                width: 80,
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(40),
-                ),
-              ),
-            ),
-            Positioned(
-              top: 110,
-              left: 20,
-              child: Container(
-                width: 80,
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.yellow,
-                  borderRadius: BorderRadius.circular(40),
-                ),
-              ),
-            ),
-            Positioned(
-              top: 200,
-              left: 20,
-              child: Container(
-                width: 80,
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(40),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
+      //home: const FormExample(),
+      home: const Assigmentweek5(),
+      //home: const ApiExampleList(),
+      //home: const RegistrationForm(),
     );
   }
 }
