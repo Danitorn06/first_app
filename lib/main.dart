@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 //import 'form_example/form_example1.dart';
 //import 'api_example/api_example.dart';
 //import 'api_example/api_exampleList.dart';
-import 'api_example/AssigmentWeek5.dart';
+//import 'api_example/AssigmentWeek5.dart';
+//import 'page/CustomWidgetPage.dart';
+import 'page/ProfilePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,9 +22,10 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       //home: const FormExample(),
-      home: const Assigmentweek5(),
+      //home: const CustomWidgetPage(),
       //home: const ApiExampleList(),
       //home: const RegistrationForm(),
+      home: const ProfilePage(),
     );
   }
 }
